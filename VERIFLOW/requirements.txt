@@ -1,0 +1,13 @@
+# Core dependencies for VERIFLOW
+requests
+python-dotenv
+spacy
+sentence-transformers
+transformers
+torch
+numpy
+scikit-learn
+wikipedia
+
+# Optional: download spacy model
+# python -m spacy download en_core_web_sm
