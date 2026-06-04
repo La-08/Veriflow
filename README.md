@@ -1,18 +1,52 @@
 VERIFLOW
+
 VERIFLOW is a framework for evaluating the reliability of AI-generated responses. Large language models can produce answers that sound convincing but are factually incorrect, contradictory, or unsupported. VERIFLOW analyzes responses from multiple perspectives and combines the results into a final reliability score.
 
 Why I Built This
+
 Modern LLM outputs often sound confident even when they are wrong. That makes hallucinations difficult to detect, especially for users who do not already know the correct answer.
 
 VERIFLOW introduces a layered verification pipeline that examines:
 
+
 factual accuracy
 internal consistency
 confidence and bias patterns
+
 How It Works
-User Question ↓ DeepSeek ↓ AI Response ↓ Preprocessing ↓ Engine A — Fact Verification ↓ Engine B — Consistency Analysis ↓ Engine C — Confidence & Bias Analysis ↓ Aggregator ↓ Reliability Score
+
+User Question
+
+↓ 
+
+DeepSeek
+
+↓ 
+
+AI Response
+
+↓
+
+Preprocessing 
+
+↓ 
+
+Engine A — Fact Verification
+
+↓ 
+
+Engine B — Consistency Analysis
+
+↓ 
+
+Engine C — Confidence & Bias Analysis ↓ Aggregator 
+
+↓ 
+
+Reliability Score
 
 Components
+
 Engine A – Fact Verification
 Checks whether factual claims in the response can be supported by external evidence.
 
