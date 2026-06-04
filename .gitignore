@@ -1,4 +1,27 @@
+# Secrets
 .env
+
+# Python cache
 __pycache__/
 *.pyc
-outputs/
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated outputs
+outputs/logs/
+
+# If reports are generated every run, ignore them too
+outputs/reports/
